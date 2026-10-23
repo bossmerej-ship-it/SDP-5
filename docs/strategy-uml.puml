@@ -1,0 +1,59 @@
+@startuml
+title Calculator — Strategy pattern
+skinparam backgroundColor white
+skinparam shadowing false
+skinparam defaultFontName "Segoe UI"
+skinparam classBackgroundColor #F1F4F6
+skinparam classBorderColor #263442
+skinparam ArrowColor #263442
+skinparam classAttributeIconSize 0
+hide empty members
+top to bottom direction
+
+class Main <<Client>> {
+  + {static} main(args: String[]): void
+}
+class Calculator <<Context>> {
+  - strategy: OperationStrategy
+  + Calculator(strategy: OperationStrategy)
+  + setStrategy(strategy: OperationStrategy): void
+  + calculate(first: double, second: double): double
+}
+interface OperationStrategy <<Strategy>> {
+  + execute(first: double, second: double): double
+}
+class AddStrategy <<ConcreteStrategy>> {
+  + execute(first: double, second: double): double
+}
+class SubtractStrategy <<ConcreteStrategy>> {
+  + execute(first: double, second: double): double
+}
+class MultiplyStrategy <<ConcreteStrategy>> {
+  + execute(first: double, second: double): double
+}
+class DivideStrategy <<ConcreteStrategy>> {
+  + execute(first: double, second: double): double
+}
+
+Main ..> Calculator : configures
+Main ..> AddStrategy : <<create>>
+Main ..> SubtractStrategy : <<create>>
+Main ..> MultiplyStrategy : <<create>>
+Main ..> DivideStrategy : <<create>>
+Calculator "0..*" o-- "1" OperationStrategy : strategy
+OperationStrategy <|.. AddStrategy
+OperationStrategy <|.. SubtractStrategy
+OperationStrategy <|.. MultiplyStrategy
+OperationStrategy <|.. DivideStrategy
+
+note bottom of Main
+  Only the public entry point is shown.
+  Private strategy map and helpers are omitted.
+end note
+legend bottom
+  Hollow diamond: shared aggregation, at Calculator.
+  Hollow triangle + dashed line: interface realization.
+  Main creates strategy objects and passes them to Calculator.
+  SVG/PNG omit operation parameter names for compactness.
+endlegend
+@enduml
