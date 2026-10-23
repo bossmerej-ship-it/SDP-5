@@ -35,12 +35,12 @@ class DivideStrategy <<ConcreteStrategy>> {
   + execute(first: double, second: double): double
 }
 
-Main ..> Calculator : configures
-Main ..> AddStrategy : <<create>>
-Main ..> SubtractStrategy : <<create>>
-Main ..> MultiplyStrategy : <<create>>
-Main ..> DivideStrategy : <<create>>
-Calculator "0..*" o-- "1" OperationStrategy : strategy
+Main ..> Calculator
+Main ..> AddStrategy
+Main ..> SubtractStrategy
+Main ..> MultiplyStrategy
+Main ..> DivideStrategy
+Calculator "0..*" o-- "1" OperationStrategy
 OperationStrategy <|.. AddStrategy
 OperationStrategy <|.. SubtractStrategy
 OperationStrategy <|.. MultiplyStrategy

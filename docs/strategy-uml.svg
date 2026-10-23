@@ -10,16 +10,10 @@
 <polyline points="1210.3923048454133,1069.0 1200,1075 1210.3923048454133,1081.0" fill="none" stroke="#8291a0" stroke-width="1.8" stroke-linejoin="round"/>
 <polyline points="300,70 300,45 1235,45 1235,805 1200,805" fill="none" stroke="#8291a0" stroke-width="1.8" stroke-linejoin="round" stroke-dasharray="9 6"/>
 <polyline points="1210.3923048454133,799.0 1200,805 1210.3923048454133,811.0" fill="none" stroke="#8291a0" stroke-width="1.8" stroke-linejoin="round"/>
-<text x="18" y="591.5" fill="#64748b" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" text-anchor="middle" dominant-baseline="text-before-edge" transform="rotate(-90 18 600)">«create»</text>
-<text x="86" y="476.5" fill="#64748b" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" text-anchor="middle" dominant-baseline="text-before-edge" transform="rotate(-90 86 485)">«create»</text>
-<text x="1282" y="591.5" fill="#64748b" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" text-anchor="middle" dominant-baseline="text-before-edge" transform="rotate(90 1282 600)">«create»</text>
-<text x="1215" y="476.5" fill="#64748b" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" text-anchor="middle" dominant-baseline="text-before-edge" transform="rotate(90 1215 485)">«create»</text>
 <polyline points="530,135 630,135" fill="none" stroke="#8291a0" stroke-width="1.8" stroke-linejoin="round" stroke-dasharray="9 6"/>
 <polyline points="619.6076951545867,141.0 630,135 619.6076951545867,129.0" fill="none" stroke="#8291a0" stroke-width="1.8" stroke-linejoin="round"/>
-<text x="580" y="106" fill="#64748b" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" text-anchor="middle" dominant-baseline="text-before-edge">configures</text>
 <polyline points="850,343 850,410" fill="none" stroke="#263442" stroke-width="2" stroke-linejoin="round"/>
 <polygon points="850,315 861,329 850,343 839,329" fill="white" stroke="#263442" stroke-width="2" stroke-linejoin="miter"/>
-<text x="875" y="355" fill="#64748b" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="400" text-anchor="start" dominant-baseline="text-before-edge">strategy</text>
 <text x="815" y="321" fill="#263442" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="400" text-anchor="end" dominant-baseline="text-before-edge">0..*</text>
 <text x="831" y="382" fill="#263442" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="400" text-anchor="end" dominant-baseline="text-before-edge">1</text>
 <polyline points="550,730 550,575" fill="none" stroke="#263442" stroke-width="2" stroke-linejoin="round" stroke-dasharray="9 6"/>
@@ -30,7 +24,6 @@
 <polygon points="630,555 618,575 642,575" fill="white" stroke="#263442" stroke-width="2" stroke-linejoin="miter"/>
 <polyline points="700,1075 670,1075 670,575" fill="none" stroke="#263442" stroke-width="2" stroke-linejoin="round" stroke-dasharray="9 6"/>
 <polygon points="670,555 658,575 682,575" fill="white" stroke="#263442" stroke-width="2" stroke-linejoin="miter"/>
-<text x="420" y="634" fill="#64748b" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="400" text-anchor="start" dominant-baseline="text-before-edge">implements</text>
 <rect x="100" y="70" width="430" height="130" fill="white" stroke="#263442" stroke-width="1.8"/>
 <rect x="100" y="70" width="430" height="65" fill="#f1f4f6" stroke="#263442" stroke-width="1.8"/>
 <text x="315.0" y="79" fill="#64748b" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="400" text-anchor="middle" dominant-baseline="text-before-edge">«Client»</text>
